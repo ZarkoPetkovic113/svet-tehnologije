@@ -1,0 +1,344 @@
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-color:white;
+    color: darkgray;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding: 10px;
+    background-color: black ;
+    margin: 0;
+  }
+  
+  .navbar li {
+    flex: 1;  
+    text-align: center;
+  }
+  
+  .navbar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.2em;
+    transition: color 0.3s;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+
+  .navbar a :nth-child(1){
+    animation-delay: 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: orange; 
+  }
+  
+  #pocetna {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  #pocetna h1 {
+    font-size: 2.5em;
+    color: black;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  #pocetna p {
+    font-size: 1.5em;
+    color: black;
+    margin-top: 10px;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+
+  @keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.kartice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.kartica {
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid silver;
+  border-radius: 8px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+.kartica h3, .kartica p{
+  color: rgb(34, 34, 34);
+}
+
+  .kartica:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+  .kartica:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+  .kartica:nth-child(3) {
+    animation-delay: 0.9s;
+}
+  
+  .kartica:hover {
+    background-color: whitesmoke;
+  }
+
+  #pocetna:nth-child(1){
+    animation-delay: 0.3s;
+  }
+  
+  .kartica a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .kartica a:hover {
+    background-color: orange;
+  }
+
+  .slike{
+    display: flex;
+    justify-content: space-between;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  .slika{
+    flex: 1;
+  }
+  .proizvod{
+    width: 800px;
+    height: 600px;
+    margin: 20px auto;
+  }
+  
+  footer { 
+    margin-top: auto;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+  }
+  
+  footer p {
+    font-size: 1em;
+  }
+  
+  .recenzije {
+    display: flex;
+    gap: 30px;
+    max-width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  .recenzije img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 10px;
+    height: auto;
+  }
+  
+  .i16, .s23, .jbl {
+    border: 1px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0.5, 0.3, 0.5, 0.3);
+    max-width: 30%;
+    transition: transform 0.3s ease;
+    margin-left: 60px;
+  }
+  
+  .naziv {
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    list-style-type: none;
+  }
+  
+  .recenzije ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .recenzije ul li {
+    font-size: 0.9em;
+    color: gray;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .recenzije {
+      flex-direction: column; 
+    }
+    .akcija {
+      flex-direction: column; 
+    }
+  }
+  
+  .i16:hover, .s23:hover, .jbl:hover {
+    transform: translateY(-10px);
+    font-weight: bold;
+  }
+  
+  .recenzije a {
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+  }
+  
+  .recenzije a:hover {
+    color: black;
+  }
+
+  .forma{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  .forma form{
+  border: 1px solid gray;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0.3, 0.3);
+  width: 600px;
+  }
+
+  form input, form textarea{
+    width: 96%;
+    padding: 10px;
+    background-color: rgba(70, 68, 68, 0.288);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  form button{
+    width: 99.4%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: rgb(228, 183, 61);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+
+  form button:hover{
+    color: black;
+    background-color: orange;
+  }
+
+  .akcija {
+    display: flex;
+    gap: 30px;
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  .akcija img {
+    width: 90%;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 10px;
+    height: auto;
+  }
+
+  .akcija ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .akcija ul li {
+    font-size: 0.9em;
+    color: gray;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    text-align: center;
+  }
+
+  .i16a, .s23a, .jbla {
+    border: 1px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0.5, 0.3, 0.5, 0.3);
+    max-width: 30%;
+    transition: transform 0.3s ease;
+    margin-left: 60px;
+  }
+
+  .i16a:hover, .s23a:hover, .jbla:hover {
+    transform: translateY(-10px);
+    font-weight: bold;
+  }
+
+  .cena{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .pocetnacena{
+    text-decoration: line-through red;
+    color: gray;
+  }
+
+  .snizenacena{
+    color: black;
+    font-size: large;
+  }
+
+  .popust{
+    color: red;
+  }
+
+  .akcija h1{
+    display: flex;
+    justify-content: center;
+    color: black;
+  }
