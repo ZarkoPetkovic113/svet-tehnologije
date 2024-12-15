@@ -210,8 +210,34 @@
       flex-direction: column; 
     }
     .akcija {
-      flex-direction: column; 
-    }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+  }
+  .akcija img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+  }
+  .akcija ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+  }
+  .akcija ul li {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+  .i16a, .s23a, .jbla{
+    max-width: 100%;
+    margin: 10px auto;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0.3, 0.3);
+    
+  }
+ 
+
   }
   
   .i16:hover, .s23:hover, .jbl:hover {
@@ -306,10 +332,11 @@
     border: 1px solid white;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0px 4px 8px rgba(0.5, 0.3, 0.5, 0.3);
-    max-width: 30%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 30%; 
     transition: transform 0.3s ease;
-    margin-left: 60px;
+    margin: 20px auto; 
+    box-sizing: border-box;
   }
 
   .i16a:hover, .s23a:hover, .jbla:hover {
